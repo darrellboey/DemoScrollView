@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.a15056233.demoscrollview.MainActivity">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.a15056233.demoscrollview.MainActivity">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="352dp"
-        android:layout_height="39dp"
-        android:ems="10"
-        android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <Button
         android:id="@+id/button"
@@ -21,6 +16,18 @@
         android:layout_height="wrap_content"
         android:text="Button"
         tools:layout_editor_absoluteX="148dp"
-        android:layout_marginTop="93dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        android:layout_marginTop="33dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="429dp"
+        android:layout_height="218dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="-26dp"
+        tools:layout_editor_absoluteY="-10dp" />
+
 </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
